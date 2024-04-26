@@ -106,10 +106,10 @@ footer {
 footer section {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    vertical-align: middle;
+    justify-content: center;
     align-items: center;
     padding-top: 14px;
+    width: 100%;
 }
 small img {
     max-width: 30px;
@@ -120,4 +120,5 @@ small img {
 }
 footer section p {
     color: white;
+  
 }
