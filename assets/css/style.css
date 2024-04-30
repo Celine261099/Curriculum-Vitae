@@ -1,16 +1,15 @@
 @font-face {
-    font-family: "Lato", "Raleway";
-    src: url(/fonts/Lato-BoldItalic.ttf);
-    src: url(/fonts/Lato-BoldItalic.woff);
-    src: url(/fonts/Raleway-BoldItalic.ttf);
-    src: url(/fonts/Raleway-BoldItalic.woff);
+    font-family:"Lato-BoldItalic","Raleway-BoldItalic";
+    src: url(/assets/fonts/Lato-BoldItalic.ttf) format('truetype');
+    src: url(/assets/fonts/Lato-BoldItalic.woff);
+    src: url(/assets/fonts/Raleway-BoldItalic.ttf) format('truetype');
+    src: url(/assets/fonts/Raleway-BoldItalic.woff);
 }
 h1 h2 h3 {
-    font-family: Lato, Arial, sans-serif;
-
+    font-family: "Lato-BoldItalic", Arial, sans-serif;
 }
 body {
-    font-family: Raleway, 'Trebuchet MS', sans-serif;
+    font-family: "Raleway-BoldItalic", 'Lucida Sans', sans-serif;
 }
 header, main, footer {
     width: 1160px;
@@ -27,18 +26,24 @@ header, main, footer {
     margin: 0%;
     background-color: #782221;
     color: white;
+    width: 100%;
+   
 }
 .entete__photo {
     border-radius: 50%;
     box-shadow: 0px 0px 8px 10px;
     margin-top:20px;
-    cursor: zoom-in;
+    cursor: zoom-in; 
 }
-figcaption {
-    font-size: 2em;
+.entete__title {
+    text-align: center;
+    color: white;
 }
 .entete__text{
+    text-align: center;
     font-size: 1.3em;
+    padding-bottom: 20px;
+    color: white;
 }
 .contact {
     display: flex;
@@ -78,23 +83,24 @@ aside h2 {
 }
 aside article ul {
     padding-left: 35px;
+    color: white;
 }
 .brief__post {
     text-indent: 30px;
     padding-left: 20px;
     text-align: justify;
+    color: white;
 }
-
-
 /*contenu de droite*/
- section h2 { 
+section h2 { 
     background-color: #dbc2a4;
 }
-section{
+section {
     width: 68%;
     margin-left: 2em;
+    line-height: normal;
 }
-section article h2:hover {
+section h2:hover {
     border-left: 4px solid #782221;
 }/*fin de main*/
 
@@ -103,22 +109,19 @@ footer {
     padding-bottom: 5px;
     background-color: #782221;
 }
-footer section {
+footer nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding-top: 14px;
     width: 100%;
+    color: white;
 }
 small img {
     max-width: 30px;
     min-height: 30px;
 }
 .social :hover .social__icon {
-    opacity: 0.;
-}
-footer section p {
-    color: white;
-  
+    opacity: 0.5;
 }
